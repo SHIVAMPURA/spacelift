@@ -1,5 +1,5 @@
-resource "google_compute_instance" "vm-demo-spacelift" {
-  name         = "vm-demo-spacelift"
+resource "google_compute_instance" "demo-spacelift" {
+  name         = "demo-spacelift"
   machine_type = "e2-micro"  
   zone         = "us-central1-a"  
   boot_disk {
