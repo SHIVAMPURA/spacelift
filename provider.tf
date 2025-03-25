@@ -8,8 +8,8 @@ terraform {
 }
 
 provider "google" {
-project = "devops-sandbox"
+project = "devops-sandbox-452616"
 region = "us-central1"
 zone = "us-central1-a"
-credentials = "./devops-sandbox-452616-ad8f897974fa.json"
+credentials = "keys.json"
 }
