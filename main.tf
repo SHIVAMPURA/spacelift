@@ -1,14 +1,14 @@
-resource "google_compute_instance" "demo-spacelift" {
-  name         = "demo-spacelift"
+resource "google_compute_instance" "vm-demo-spacelift1" {
+  name         = "vm-demo-spacelift1"
   machine_type = "e2-micro"  
   zone         = "us-central1-a"  
   boot_disk {
     initialize_params {
-      image = "debian-11-bullseye-v20220216"  
+      image = "projects/debian-cloud/global/images/debian-12-bookworm-v20250311"  
     }
   }
   network_interface {
-    network = "default"
+    network = "testvpc"
   }
 }
 
